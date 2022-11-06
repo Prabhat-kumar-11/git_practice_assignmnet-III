@@ -1,13 +1,12 @@
 function checkPrime(n){
     let isPrime = true;
     for(let i = 2; i*i <= n; i++){
-        if(n % i == 0){
-            isPrime = false;
-            break;
+        if(n % i != 0){
+            isPrime = true;
+            break
         }
     }
 
-    return isPrime;
 }
 
 let num = 11;
